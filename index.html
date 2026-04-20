@@ -427,163 +427,84 @@
             </div>
           </div>
 
-          <article class="mobile-participation__step mobile-participation__step--stores">
-            <div class="mobile-participation__copy scroll-reveal" data-reveal-delay="0">
-              <div class="mobile-participation__badge ds-chip ds-chip--neutral">
-                <span class="text-label-1-bold">STEP 1</span>
-              </div>
-              <div class="mobile-participation__text-block">
-                <h3 class="mobile-participation__step-title ds-heading ds-heading--card">파이 시작하기</h3>
-                <p class="mobile-participation__step-description text-body-2-regular">
-                  앱스토어에서 파이 앱을 다운로드 받으세요
-                </p>
-                <div class="mobile-participation__store-links" aria-label="앱 다운로드 스토어">
-                  <a class="store-button" href="https://play.google.com/store/apps/details?id=hw.dp.plus&hl=ko"
-                    data-store="google" aria-label="Google Play에서 다운로드">
-                    <span class="store-button__icon-frame" aria-hidden="true">
-                      <img class="store-button__icon-image" src="./assets/icon_02.svg" alt="" />
-                    </span>
-                    <span class="store-button__label">Google Play</span>
-                  </a>
-                  <a class="store-button" href="https://apps.apple.com/kr/app/%ED%8C%8C%EC%9D%B4/id6755743981"
-                    data-store="apple" aria-label="App Store에서 다운로드">
-                    <span class="store-button__icon-frame" aria-hidden="true">
-                      <img class="store-button__icon-image store-button__icon-image--apple" src="./assets/icon_01.png"
-                        alt="" />
-                    </span>
-                    <span class="store-button__label">App Store</span>
-                  </a>
-                </div>
-                <button
-                  class="mobile-header__download mobile-participation__download ds-button ds-button--solid text-label-1-bold"
-                  type="button">
-                  <img class="mobile-participation__download-icon" src="./assets/download.svg" alt=""
-                    aria-hidden="true" />
-                  <span>앱 다운로드</span>
-                </button>
-              </div>
-            </div>
-
-            <div class="mobile-participation__visual mobile-participation__visual--stores scroll-reveal"
-              data-reveal-delay="180" aria-hidden="true">
-              <div class="mobile-participation__store mobile-participation__store--google">
-                <img class="mobile-participation__store-icon" src="./assets/icon_02.svg?v=4" alt="" />
-              </div>
-              <div class="mobile-participation__store mobile-participation__store--apple">
-                <img class="mobile-participation__store-icon" src="./assets/icon_01.png?v=3" alt="" />
-              </div>
-              <div class="mobile-participation__store-boxes" aria-hidden="true">
-                <img class="mobile-participation__store-box mobile-participation__store-box--first"
-                  src="./assets/box.01.svg" alt="" />
-                <img class="mobile-participation__store-box mobile-participation__store-box--second"
-                  src="./assets/box.02.svg" alt="" />
-                <img class="mobile-participation__store-box mobile-participation__store-box--third"
-                  src="./assets/box.03.svg" alt="" />
-              </div>
-            </div>
-          </article>
-
-          <article class="mobile-participation__step">
-            <div class="mobile-participation__copy scroll-reveal" data-reveal-delay="0">
-              <div class="mobile-participation__badge ds-chip ds-chip--neutral">
-                <span class="text-label-1-bold">STEP 2</span>
-              </div>
-              <div class="mobile-participation__text-block">
-                <h3 class="mobile-participation__step-title ds-heading ds-heading--card">자녀를 등록하세요</h3>
-                <p class="mobile-participation__step-description text-body-2-regular">
-                  앱을 실행하고 회원가입 후 자녀를 등록하세요
-                </p>
-              </div>
-            </div>
-
-            <div
-              class="mobile-participation__visual mobile-participation__visual--child mobile-participation__visual--child-register scroll-reveal"
-              id="mobileParticipationChildVisual" aria-hidden="true" data-reveal-delay="180">
-              <div class="mobile-participation__profile-plus mobile-participation__profile-plus--reveal"
-                id="mobileParticipationProfilePlus">
-                <img class="mobile-participation__profile-plus-icon" src="./assets/ic_edit.svg" alt="" />
-              </div>
-              <div class="mobile-participation__profile-child">
-                <span class="mobile-participation__profile-child-label">김첫째</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="mobile-participation__step mobile-participation__step--package">
-            <div class="mobile-participation__copy mobile-participation__copy--package scroll-reveal"
+          <div>
+            <article class="mobile-participation__step mobile-participation__step--download scroll-reveal"
               data-reveal-delay="0">
+              <div class="mobile-participation__card">
+                <div class="mobile-participation__badge ds-chip ds-chip--neutral">
+                  <span>STEP 1</span>
+                </div>
+                <h3 class="mobile-participation__step-title ds-heading ds-heading--card">파이 Pi 앱 다운로드</h3>
+                <div class="mobile-participation__step-visual">
+                  <img src="./assets/bg_img_app_2.png" alt="파이 앱 화면" class="mobile-participation__step-image" />
+                </div>
+              </div>
+            </article>
+            <button class="mobile-participation__download ds-button ds-button--solid text-label-1-bold" type="button">
+              <img class="mobile-participation__download-icon" src="./assets/download.svg" alt="" aria-hidden="true" />
+              <span>앱 다운로드</span>
+            </button>
+          </div>
+
+          <article class="mobile-participation__step mobile-participation__step--package scroll-reveal"
+            data-reveal-delay="0">
+            <div class="mobile-participation__card mobile-participation__card--orange">
               <div class="mobile-participation__badge ds-chip ds-chip--neutral">
-                <span class="text-label-1-bold">STEP 3</span>
+                <span>STEP 2</span>
               </div>
-              <div class="mobile-participation__package-copy">
-                <h3 class="mobile-participation__step-title ds-heading ds-heading--card">증여+투자 패키지 신청</h3>
-                <p class="mobile-participation__step-description text-body-2-regular">
-                  자녀의 남은 증여재산공제 한도에 맞는
-                  <br />
-                  증여+투자 패키지를 신청하세요
-                </p>
-                <div class="mobile-participation__inline-notice scroll-reveal" data-reveal-delay="260">
-                  <p class="mobile-participation__package-notice-text text-body-4-bold">
-                    증여+투자 패키지는 증여세 간편신고도 가능해요
-                  </p>
+              <h3 class="mobile-participation__step-title ds-heading ds-heading--card">증여+투자 패키지 신청</h3>
+              <p class="mobile-participation__step-description">자녀의 남은 증여재산공제 한도를 참고하여<br />원하는 증여+투자
+                패키지를 신청하세요.</p>
+              <div class="mobile-participation__package-scroll" id="mobileParticipationPackageVisual">
+                <div class="mobile-participation__package-image mobile-participation__package-image--reveal"
+                  id="mobileParticipationPackageImage">
+                  <div class="mobile-participation__package-track">
+                    <img class="mobile-participation__package-image-part" src="./assets/list.04.png" alt="" />
+                    <img class="mobile-participation__package-image-part" src="./assets/list.03.png" alt="" />
+                    <img class="mobile-participation__package-image-part" src="./assets/list.02.png" alt="" />
+                    <img class="mobile-participation__package-image-part" src="./assets/list.01.png" alt="" />
+                  </div>
+                  <div class="mobile-participation__package-track" aria-hidden="true">
+                    <img class="mobile-participation__package-image-part" src="./assets/list.04.png" alt="" />
+                    <img class="mobile-participation__package-image-part" src="./assets/list.03.png" alt="" />
+                    <img class="mobile-participation__package-image-part" src="./assets/list.02.png" alt="" />
+                    <img class="mobile-participation__package-image-part" src="./assets/list.01.png" alt="" />
+                  </div>
                 </div>
               </div>
             </div>
-
-            <div class="mobile-participation__visual mobile-participation__visual--package-placeholder scroll-reveal"
-              id="mobileParticipationPackageVisual" aria-hidden="true" data-reveal-delay="180">
-              <div class="mobile-participation__package-image mobile-participation__package-image--reveal"
-                id="mobileParticipationPackageImage">
-                <div class="mobile-participation__package-track">
-                  <img class="mobile-participation__package-image-part mobile-participation__package-image-part--1"
-                    src="./assets/list.04.png" alt="" />
-                  <img class="mobile-participation__package-image-part mobile-participation__package-image-part--2"
-                    src="./assets/list.03.png" alt="" />
-                  <img class="mobile-participation__package-image-part mobile-participation__package-image-part--3"
-                    src="./assets/list.02.png" alt="" />
-                  <img class="mobile-participation__package-image-part mobile-participation__package-image-part--4"
-                    src="./assets/list.01.png" alt="" />
-                </div>
-                <div class="mobile-participation__package-track" aria-hidden="true">
-                  <img class="mobile-participation__package-image-part" src="./assets/list.04.png" alt="" />
-                  <img class="mobile-participation__package-image-part" src="./assets/list.03.png" alt="" />
-                  <img class="mobile-participation__package-image-part" src="./assets/list.02.png" alt="" />
-                  <img class="mobile-participation__package-image-part" src="./assets/list.01.png" alt="" />
-                </div>
-              </div>
-            </div>
-
-            <div class="mobile-participation__package-notice scroll-reveal" data-reveal-delay="260">
-              <p class="mobile-participation__package-notice-text text-body-4-bold">
-                증여+투자 패키지는 증여세 간편신고도 가능해요
-              </p>
-            </div>
-
           </article>
 
-          <article class="mobile-participation__step">
-            <div class="mobile-participation__copy scroll-reveal" data-reveal-delay="0">
+          <article class="mobile-participation__step mobile-participation__step--complete scroll-reveal"
+            data-reveal-delay="0">
+            <div class="mobile-participation__card mobile-participation__card--orange">
               <div class="mobile-participation__badge ds-chip ds-chip--neutral">
-                <span class="text-label-1-bold">STEP 4</span>
+                <span>STEP 3</span>
               </div>
-              <div class="mobile-participation__text-block">
-                <h3 class="mobile-participation__step-title ds-heading ds-heading--card">당첨 혜택 받을 준비 완료하기</h3>
-                <p class="mobile-participation__step-description text-body-2-regular">
-                  당첨자 선정은 마케팅 정보 활용에 동의한 고객을
-                  <br />
-                  대상으로 진행돼요
-                </p>
-                <div class="mobile-participation__inline-notice scroll-reveal" data-reveal-delay="260">
-                  <p class="mobile-participation__package-notice-text text-body-4-bold">
-                    앱 설치 후 My 탭 → 알림설정에서 '혜택 및 이벤트 알림'을 켜주세요
-                  </p>
+              <h3 class="mobile-participation__step-title ds-heading ds-heading--card">이벤트 자동 응모 완료</h3>
+              <p class="mobile-participation__step-description">번거로운 절차 없이, 기간 내 패키지 가입을 완료하면 자동으로
+                응모됩니다.</p>
+              <div class="mobile-participation__check-container">
+                <div class="mobile-participation__check-circle">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.5 12.75L9.5 17.75L19.5 6.25" stroke="#fff" stroke-width="4" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
                 </div>
+                <p class="mobile-participation__check-text">이벤트 참여가<br />완료되었습니다.</p>
               </div>
             </div>
+          </article>
 
-            <div
-              class="mobile-participation__visual mobile-participation__visual--package-placeholder mobile-participation__visual--alerts scroll-reveal"
-              aria-hidden="true" data-reveal-delay="180">
+          <article class="mobile-participation__step mobile-participation__step--marketing scroll-reveal"
+            data-reveal-delay="0">
+            <div class="mobile-participation__card mobile-participation__card--orange">
+              <div class="mobile-participation__badge ds-chip ds-chip--neutral">
+                <span>STEP 4</span>
+              </div>
+              <h3 class="mobile-participation__step-title ds-heading ds-heading--card">마케팅 정보 활용 등의 여부 확인</h3>
+              <p class="mobile-participation__step-description">당첨자 선정은 마케팅 정보 활용에 동의한 고객을 대상으로
+                진행합니다.<br />(My 탭 → 알림설정 → 혜택 및 이벤트 알림 일정 체크)</p>
               <div class="mobile-participation__alerts-card">
                 <div class="mobile-participation__alerts-header">
                   <div class="mobile-participation__alerts-copy">
@@ -593,7 +514,6 @@
                   <span
                     class="mobile-participation__alerts-toggle mobile-participation__alerts-toggle--large js-alerts-toggle-main"></span>
                 </div>
-
                 <div class="mobile-participation__alerts-list">
                   <div class="mobile-participation__alerts-row">
                     <span class="mobile-participation__alerts-label">앱 푸시</span>
@@ -611,7 +531,6 @@
                       class="mobile-participation__alerts-toggle mobile-participation__alerts-toggle--small js-alerts-toggle-call"></span>
                   </div>
                 </div>
-
                 <div class="mobile-participation__alerts-consent">
                   <span class="mobile-participation__alerts-consent-label">마케팅 정보 활용 동의</span>
                   <div class="mobile-participation__alerts-consent-status js-alerts-consent-status">
@@ -620,13 +539,6 @@
                   </div>
                 </div>
               </div>
-            </div>
-
-            <div class="mobile-participation__package-notice mobile-participation__package-notice--alerts scroll-reveal"
-              data-reveal-delay="260">
-              <p class="mobile-participation__package-notice-text text-body-4-bold">
-                앱 설치 후 My 탭 → 알림설정에서 '혜택 및 이벤트 알림'을 켜주세요
-              </p>
             </div>
           </article>
         </div>
@@ -700,6 +612,12 @@
                 불가하므로 이용에 참고 부탁드립니다.</li>
               <li>이벤트 문의: 본 이벤트 관련 CS 문의는 지정된 공식 이메일 창구를 통해서만 접수 및 안내가 진행됩니다. (이메일 주소 하단 참고)</li>
             </ul>
+            <p class="mobile-guide__subtitle"></p>
+            <ul>
+              <li>당첨자에게는 앱 가입 시 등록된 연락처로 개별 안내를 드립니다.</li>
+              <li>영업일 기준 3일 이내 총 5회 이상 연락을 시도했음에도 불구하고 연결되지 않을 경우, 당첨은 자동 취소되며 해당 혜택은 차순위 당첨자에게 이관됩니다.</li>
+              <li>연락처 오기입이나 수신 거부 등으로 인한 연락 불가 시 귀책 사유는 본인에게 있으며, 당사는 책임지지 않습니다.</li>
+            </ul>
           </div>
         </div>
       </section>
@@ -756,6 +674,11 @@
                 </a>
               </div>
             </div>
+            <div class="site-footer__bottom scroll-reveal" data-reveal-delay="120">
+              <p class="site-footer__info">이벤트 관련 문의 :
+                hanwha.plus.pi_event26@gmail.com / 평일
+                10:00~17:00 운영, 주말 및 공휴일 휴무</p>
+            </div>
           </div>
           <div class="mobile-footer__brand scroll-reveal" data-reveal-delay="0">
             <div class="mobile-footer__brand-top">
@@ -769,6 +692,12 @@
                   alt="한화생명" />
               </div>
             </div>
+          </div>
+
+          <div class="mobile-footer__bottom scroll-reveal" data-reveal-delay="120">
+            <p class="mobile-footer__info">이벤트 관련 문의 :
+              hanwha.plus.pi_event26@gmail.com<br>평일
+              10:00~17:00 운영, 주말 및 공휴일 휴무</p>
           </div>
 
           <div class="mobile-footer__bottom scroll-reveal" data-reveal-delay="120">
@@ -787,7 +716,8 @@
             </div>
           </div>
         </div>
-      </footer>
+    </div>
+    </footer>
     </div>
   </main>
 
@@ -820,8 +750,6 @@
       const overviewCard = document.getElementById("mobileOverviewCard");
       const overviewTaxBoxLarge = document.getElementById("mobileOverviewTaxBoxLarge");
       const overviewAssetBox = document.getElementById("mobileOverviewAssetBox");
-      const participationChildVisual = document.getElementById("mobileParticipationChildVisual");
-      const participationProfilePlus = document.getElementById("mobileParticipationProfilePlus");
       const participationPackageVisual = document.getElementById("mobileParticipationPackageVisual");
       const participationPackageImage = document.getElementById("mobileParticipationPackageImage");
       const participationAlertsCard = document.querySelector(".mobile-participation__alerts-card");
@@ -1383,17 +1311,7 @@
         }
 
         steps.forEach((step, index) => {
-          const visual = step.querySelector(".mobile-participation__visual");
-          const copy = step.querySelector(".mobile-participation__copy");
-          const baseDelay = 120 + index * 280;
-
-          if (visual) {
-            visual.setAttribute("data-reveal-delay", String(baseDelay));
-          }
-
-          if (copy) {
-            copy.setAttribute("data-reveal-delay", String(baseDelay + 120));
-          }
+          step.setAttribute("data-reveal-delay", String(120 + index * 200));
         });
       };
 
@@ -1430,30 +1348,6 @@
         observeReveal(overviewCard, { delay: 180 });
         observeReveal(overviewTaxBoxLarge, { delay: 200 });
         observeReveal(overviewAssetBox, { delay: 200 });
-      };
-
-      const observeParticipationProfile = () => {
-        if (!participationChildVisual || !participationProfilePlus || !("IntersectionObserver" in window)) {
-          if (participationProfilePlus) participationProfilePlus.classList.add("is-visible");
-          return;
-        }
-
-        const observer = new IntersectionObserver(
-          (entries) => {
-            entries.forEach((entry) => {
-              if (!entry.isIntersecting) return;
-              participationProfilePlus.classList.add("is-visible");
-              observer.disconnect();
-            });
-          },
-          {
-            root: null,
-            threshold: 0.35,
-            rootMargin: "0px 0px -10% 0px"
-          }
-        );
-
-        observer.observe(participationChildVisual);
       };
 
       const observeParticipationPackage = () => {
@@ -1555,7 +1449,6 @@
           overviewImage,
           overviewCard,
           overviewAssetBox,
-          participationProfilePlus,
           participationPackageImage
         ].forEach((target) => {
           if (target) target.classList.add("is-visible");
@@ -1568,12 +1461,11 @@
       syncEventStickyState();
       syncEventLine();
       observeOverviewImage();
-      observeParticipationProfile();
-      observeParticipationPackage();
       syncParticipationRevealDelays();
       observeScrollReveals();
       const overviewCarouselController = initOverviewPackageCarousel();
       initOverviewDesktopSequence(overviewCarouselController);
+      observeParticipationPackage();
       initParticipationAlertsAnimation();
       initStoreDownloadModal();
       initMobileDownloadButtons();
