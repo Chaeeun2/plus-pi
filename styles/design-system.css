@@ -1,0 +1,82 @@
+:where(.ds-button) {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  cursor: pointer;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+:where(.ds-button--solid) {
+  padding: 10px 14px;
+  border-radius: 8px;
+  background: var(--color-gray-90);
+  color: var(--color-text-inverse);
+}
+
+:where(.ds-chip) {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  border-radius: 100px;
+}
+
+:where(.ds-chip--brand) {
+  background: var(--color-orange-10);
+  color: var(--color-orange-70);
+}
+
+:where(.ds-chip--neutral) {
+  background: var(--color-orange-10);
+  color: var(--color-orange-60);
+}
+
+:where(.ds-chip--soft-pink) {
+  background: #ffe6e6;
+  color: var(--color-gray-90);
+}
+
+:where(.ds-heading) {
+  margin: 0;
+  color: var(--color-text-primary);
+  font-family: var(--font-family-lifeplus);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: 0;
+}
+
+:where(.ds-heading--hero) {
+  font-size: 32px;
+  line-height: 40px;
+}
+
+:where(.ds-heading--section) {
+  font-size: 26px;
+  line-height: 34px;
+}
+
+:where(.ds-heading--card) {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+:where(.ds-copy) {
+  font-family: var(--font-family-pretendard);
+  font-weight: var(--font-weight-regular);
+}
+
+:where(.ds-copy--section) {
+  color: var(--color-gray-60);
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: -0.36px;
+}
+
+:where(.ds-copy--body) {
+  color: var(--color-gray-60);
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: -0.3px;
+}
+
