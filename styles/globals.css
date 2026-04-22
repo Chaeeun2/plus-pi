@@ -28,7 +28,6 @@ html {
 
 body {
   margin: 0;
-  min-width: 320px;
   font-family: var(--font-family-pretendard);
   background: var(--color-bg-primary);
   color: var(--color-text-primary);
@@ -389,7 +388,7 @@ body.store-modal-open {
 
 .mobile-hero__asset-shell {
   top: 220px;
-  width: min(320px, var(--mobile-content-width));
+  width: 100%;
   margin: 0 auto;
   transform: translateX(0);
   position: relative;
@@ -589,7 +588,7 @@ body.store-modal-open {
   position: absolute;
   top: 296px;
   left: 50%;
-  width: min(320px, var(--mobile-content-width));
+  width: 100%;
   transform: translateX(-50%);
   z-index: 1;
 }
@@ -697,7 +696,7 @@ body.store-modal-open {
   width: 100%;
   min-height: 458.5px;
   margin-top: -15px;
-  padding: 17.5px;
+  padding: 17.5px 17.5px 0;
   border-radius: 17.5px 17.5px 0 0;
   background: var(--color-bg-primary);
   z-index: 2;
@@ -741,9 +740,9 @@ body.store-modal-open {
   margin: 0;
   color: var(--color-text-primary);
   font-family: var(--font-family-lifeplus);
-  font-size: 23px;
+  font-size: 20px;
   font-weight: var(--font-weight-bold);
-  line-height: 32px;
+  line-height: 1.4;
   letter-spacing: -0.2px;
 }
 
@@ -766,6 +765,11 @@ body.store-modal-open {
   border: 0.875px solid var(--color-border-default);
 }
 
+.mobile-overview__portfolio-box {
+  border-radius: 0;
+  border-bottom: 0px solid black;
+}
+
 .mobile-overview__tax-box {
   display: flex;
   flex-direction: column;
@@ -774,7 +778,7 @@ body.store-modal-open {
 }
 
 .mobile-overview__tax-box--large {
-  --overview-tax-box-large-scale: 1.242;
+  --overview-tax-box-large-scale: 1.35;
   position: relative;
   z-index: 10;
   transform: translateY(22px) scale(var(--overview-tax-box-large-scale));
@@ -907,7 +911,7 @@ body.store-modal-open {
   position: relative;
   overflow: hidden;
   width: 100%;
-  height: 12px;
+  height: 8px;
   border-radius: 262.5px;
   background: var(--color-gray-10);
 }
@@ -919,24 +923,8 @@ body.store-modal-open {
   height: 100%;
   border-radius: inherit;
 }
-
-.mobile-overview__progress-fill--light {
-  width: 50%;
-  background: var(--color-orange-30);
-}
-
-.mobile-overview__tax-box--large .mobile-overview__progress-fill--light {
-  width: 0;
-  transition: width 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.4s;
-}
-
-.mobile-overview__tax-box--large.is-visible
-  .mobile-overview__progress-fill--light {
-  width: 50%;
-}
-
 .mobile-overview__progress-fill--strong {
-  width: 25.24%;
+  width: 70%;
   background: var(--color-orange-60);
 }
 
@@ -947,7 +935,7 @@ body.store-modal-open {
 
 .mobile-overview__tax-box--large.is-visible
   .mobile-overview__progress-fill--strong {
-  width: 25.24%;
+  width: 70%;
 }
 
 .mobile-overview__progress-meta {
@@ -979,7 +967,7 @@ body.store-modal-open {
   display: flex;
   flex-direction: column;
   padding-bottom: 20px;
-  margin-top: -5px;
+  margin-top: 5px;
 }
 
 .mobile-overview__portfolio-box--reveal {
@@ -1021,7 +1009,7 @@ body.store-modal-open {
 .mobile-overview__portfolio-name {
   color: var(--color-gray-90);
   font-family: var(--font-family-pretendard);
-  font-size: 16px;
+  font-size: 14px;
   font-weight: var(--font-weight-medium);
   line-height: 21px;
   letter-spacing: -0.28px;
@@ -1031,11 +1019,14 @@ body.store-modal-open {
 .mobile-overview__portfolio-date {
   color: var(--color-gray-40);
   font-family: var(--font-family-pretendard);
-  font-size: 14.25px;
+  font-size: 12px;
   font-weight: var(--font-weight-regular);
   line-height: 17.5px;
   letter-spacing: -0.245px;
   white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 4px;
 }
 
 .mobile-overview__refresh {
@@ -1271,7 +1262,7 @@ body.store-modal-open {
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  width: min(320px, 100%);
+  width: 100%;
 }
 
 .mobile-event__title {
@@ -1719,6 +1710,10 @@ body.store-modal-open {
   width: 100%;
   margin-top: 12px;
   border-radius: 12px;
+}
+
+.pc-participation__download {
+  display: none;
 }
 
 .mobile-participation__download-icon {
@@ -2283,7 +2278,7 @@ body.store-modal-open {
 .mobile-guide__body li {
   margin: 0;
   font-size: 12px;
-  line-height: 1.6;
+  line-height: 16px;
   word-break: keep-all;
 }
 
@@ -2426,12 +2421,14 @@ body.store-modal-open {
   gap: 16px;
   padding: 20px 20px;
   border-radius: 20px 20px 0 0;
+  box-sizing: border-box;
   background: var(--color-bg-primary);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
   text-decoration: none;
   transform: translateY(calc(100% + 24px));
   pointer-events: none;
   transition: transform 0.28s ease;
+  width: 100vw;
 }
 
 .mobile-bottom-promo::after {
@@ -2575,7 +2572,7 @@ body.hero-top .mobile-bottom-promo {
   .mobile-header__stores {
     display: inline-flex;
     align-items: center;
-    gap: 4px;
+    gap: 10px;
   }
 
   .mobile-header__stores .store-button {
@@ -2661,7 +2658,7 @@ body.hero-top .mobile-bottom-promo {
     width: 100%;
     min-height: auto;
     margin-top: -16px;
-    padding: 28px;
+    padding: 28px 28px 0;
     gap: 28px;
     border-radius: 28px 28px 0 0;
   }
@@ -2671,8 +2668,8 @@ body.hero-top .mobile-bottom-promo {
   }
 
   .mobile-hero .mobile-overview__card-title {
-    font-size: 36.8px;
-    line-height: 51.2px;
+    font-size: 32px;
+    line-height: 1.4;
   }
 
   .mobile-hero .mobile-overview__card-more {
@@ -2728,7 +2725,6 @@ body.hero-top .mobile-bottom-promo {
   .mobile-hero .mobile-overview__portfolio-box {
     margin-top: 8px;
     padding-bottom: 32px;
-    border-radius: 16.8px;
   }
 
   .mobile-hero .mobile-overview__portfolio-summary {
@@ -2737,7 +2733,7 @@ body.hero-top .mobile-bottom-promo {
   }
 
   .mobile-hero .mobile-overview__portfolio-name {
-    font-size: 22.4px;
+    font-size: 20px;
   }
 
   .mobile-hero .mobile-overview__portfolio-price {
@@ -2845,6 +2841,10 @@ body.hero-top .mobile-bottom-promo {
 
   .mobile-overview__description br {
     display: block;
+  }
+
+  .mobile-overview__portfolio-date {
+    font-size: 15px;
   }
 
   .mobile-overview__package-panel {
@@ -3395,6 +3395,26 @@ body.hero-top .mobile-bottom-promo {
   .mobile-participation__download {
     padding: 14px 28px;
     font-size: 18px;
+    display: none;
+  }
+
+  .pc-participation__download {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 12px;
+  }
+
+  .pc-participation__download .store-button {
+    width: calc(50% - 6px);
+    padding: 16px 20px;
+    height: auto;
+  }
+
+  .pc-participation__download .store-button__label {
+    font-size: 18px;
   }
 
   .mobile-participation__package-price {
@@ -3516,7 +3536,7 @@ body.hero-top .mobile-bottom-promo {
   .mobile-guide__body p,
   .mobile-guide__body li {
     font-size: 13px;
-    line-height: 1.6;
+    line-height: 17px;
   }
 
   .mobile-guide__body ul {
@@ -3606,7 +3626,7 @@ body.hero-top .mobile-bottom-promo {
   .site-footer__stores {
     display: flex;
     align-items: center;
-    gap: 4px;
+    gap: 10px;
     flex-shrink: 0;
   }
 
@@ -4224,8 +4244,8 @@ body.hero-top .mobile-bottom-promo {
   }
 
   .mobile-event__step-label--sticky {
-    position: sticky !important;
-    top: var(--mobile-header-height, 50px) !important;
+    position: relative !important;
+    top: auto !important;
     z-index: 12 !important;
   }
 
@@ -4382,6 +4402,12 @@ body.hero-top .mobile-bottom-promo {
     transform: translate(var(--chip-x), var(--chip-y));
   }
 
+  .mobile-overview__refresh {
+    width: 12px;
+    height: 12px;
+    flex: 0 0 12px;
+  }
+
   .mobile-overview__headline {
     margin-top: 40px;
   }
@@ -4495,7 +4521,7 @@ body.hero-top .mobile-bottom-promo {
     position: relative !important;
     top: auto !important;
     left: auto !important;
-    width: min(100%, 320px) !important;
+    width: 100% !important;
     margin: 0 auto !important;
     display: flex !important;
     flex-direction: column !important;
@@ -4536,7 +4562,7 @@ body.hero-top .mobile-bottom-promo {
     display: block !important;
     position: relative !important;
     width: 100% !important;
-    max-width: 288px !important;
+    max-width: auto !important;
     margin: 0 auto !important;
     z-index: 10 !important;
   }
@@ -4547,9 +4573,12 @@ body.hero-top .mobile-bottom-promo {
     left: auto !important;
     right: auto !important;
     z-index: 4 !important;
-    margin-top: -10px !important;
-    padding-bottom: 57.5px !important;
+    padding-bottom: 0 !important;
+    min-height: auto !important;
     --overview-card-scroll-y: 0px !important;
+    max-width: 288px;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .mobile-footer {
