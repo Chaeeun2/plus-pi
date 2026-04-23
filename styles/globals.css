@@ -24,7 +24,7 @@
 html {
   background: var(--color-bg-primary);
   color: var(--color-text-primary);
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 body {
@@ -33,7 +33,7 @@ body {
   background: var(--color-bg-primary);
   color: var(--color-text-primary);
   max-width: 100%;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 button,
@@ -2229,8 +2229,11 @@ body.store-modal-open {
   width: 100%;
   aspect-ratio: 16 / 9;
   margin: 0 auto;
-  border-radius: 8px;
-  background: #d9d9d9;
+  border-radius: 15px;
+  background-image: url("../assets/youtube.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .mobile-insight__play {
