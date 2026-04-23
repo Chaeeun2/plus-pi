@@ -2,16 +2,21 @@
 <html lang="ko">
 
 <head>
-  <!-- Google Tag Manager -->
-  <script>(function (w, d, s, l, i) {
-      w[l] = w[l] || []; w[l].push({
-        'gtm.start':
-          new Date().getTime(), event: 'gtm.js'
-      }); var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-MRSV5NZ9');</script>
-  <!-- End Google Tag Manager -->
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3VL64MWLPQ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-3VL64MWLPQ');
+  </script>
+
+  <!-- 네이버 서치어드바이저 -->
+  <meta name="naver-site-verification" content="40f8a09e76be68ee9c091cd6796c84bae711c595" />
+
+  <!-- 구글 서치콘솔 -->
+  <meta name="google-site-verification" content="x22t09m3mzriaD6fOHHzy_A5Fi8GJrgqnZuoKy-ir_4" />
 
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
@@ -69,10 +74,6 @@
 </head>
 
 <body class="hero-top">
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MRSV5NZ9" height="0" width="0"
-      style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
 
   <main class="page-shell">
     <div class="mobile-page">
@@ -90,14 +91,14 @@
 
           <div class="mobile-header__right">
             <div class="mobile-header__stores" aria-label="앱 다운로드 스토어">
-              <a class="store-button" href="https://link-pluspi.hanwhalife.com/l17np9" target="_blank"
+              <a class="store-button ga-download-btn" href="https://link-pluspi.hanwhalife.com/l17np9" target="_blank"
                 rel="noopener noreferrer" data-store="google" aria-label="Google Play 다운로드">
                 <span class="store-button__icon-frame" aria-hidden="true">
                   <img class="store-button__icon-image" src="./assets/icon_02.svg" alt="" />
                 </span>
                 <span class="store-button__label">Google Play</span>
               </a>
-              <a class="store-button" href="https://link-pluspi.hanwhalife.com/l17np9" target="_blank"
+              <a class="store-button ga-download-btn" href="https://link-pluspi.hanwhalife.com/l17np9" target="_blank"
                 rel="noopener noreferrer" data-store="apple" aria-label="App Store 다운로드">
                 <span class="store-button__icon-frame" aria-hidden="true">
                   <img class="store-button__icon-image store-button__icon-image--apple" src="./assets/icon_01.png"
@@ -106,7 +107,8 @@
                 <span class="store-button__label">App Store</span>
               </a>
             </div>
-            <button class="mobile-header__download ds-button ds-button--solid text-label-1-bold" type="button">
+            <button class="mobile-header__download ds-button ds-button--solid text-label-1-bold ga-download-btn"
+              type="button">
               앱 다운로드
             </button>
           </div>
@@ -458,20 +460,21 @@
                 </div>
               </div>
             </article>
-            <button class="mobile-participation__download ds-button ds-button--solid text-label-1-bold" type="button">
+            <button class="mobile-participation__download ds-button ds-button--solid text-label-1-bold ga-download-btn"
+              type="button">
               <img class="mobile-participation__download-icon" src="./assets/download.svg" alt="" aria-hidden="true" />
               <span>앱 다운로드</span>
             </button>
 
             <div class="pc-participation__download" aria-label="앱 다운로드 스토어">
-              <a class="store-button" href="https://link-pluspi.hanwhalife.com/l17np9" target="_blank"
+              <a class="store-button ga-download-btn" href="https://link-pluspi.hanwhalife.com/l17np9" target="_blank"
                 rel="noopener noreferrer" data-store="google" aria-label="Google Play 다운로드">
                 <span class="store-button__icon-frame" aria-hidden="true">
                   <img class="store-button__icon-image" src="./assets/icon_02.svg" alt="" />
                 </span>
                 <span class="store-button__label">Google Play</span>
               </a>
-              <a class="store-button" href="https://link-pluspi.hanwhalife.com/l17np9" target="_blank"
+              <a class="store-button ga-download-btn" href="https://link-pluspi.hanwhalife.com/l17np9" target="_blank"
                 rel="noopener noreferrer" data-store="apple" aria-label="App Store 다운로드">
                 <span class="store-button__icon-frame" aria-hidden="true">
                   <img class="store-button__icon-image store-button__icon-image--apple" src="./assets/icon_01.png"
@@ -672,16 +675,16 @@
             </div>
             <div class="site-footer__action-row">
               <div class="site-footer__stores">
-                <a class="store-button store-button--footer" href="https://link-pluspi.hanwhalife.com/l17np9"
-                  data-store="google" aria-label="Google Play 다운로드">
+                <a class="store-button store-button--footer ga-download-btn"
+                  href="https://link-pluspi.hanwhalife.com/l17np9" data-store="google" aria-label="Google Play 다운로드">
                   <span class="store-button__icon-frame store-button__icon-frame--footer" aria-hidden="true">
                     <img class="store-button__icon-image store-button__icon-image--footer" src="./assets/icon_02.svg"
                       alt="" />
                   </span>
                   <span class="store-button__label store-button__label--footer">Google Play</span>
                 </a>
-                <a class="store-button store-button--footer" href="https://link-pluspi.hanwhalife.com/l17np9"
-                  data-store="apple" aria-label="App Store 다운로드">
+                <a class="store-button store-button--footer ga-download-btn"
+                  href="https://link-pluspi.hanwhalife.com/l17np9" data-store="apple" aria-label="App Store 다운로드">
                   <span class="store-button__icon-frame store-button__icon-frame--footer" aria-hidden="true">
                     <img
                       class="store-button__icon-image store-button__icon-image--apple store-button__icon-image--footer-apple"
@@ -768,6 +771,15 @@
       <span class="mobile-bottom-promo__desktop-chevron" aria-hidden="true"></span>
     </div>
   </a>
+
+  <!-- 구글 애널리틱스 버튼 이벤트 전송 -->
+  <script>
+    document.querySelectorAll('.ga-download-btn').forEach(function (el) {
+      el.addEventListener('click', function () {
+        gtag('event', 'download_button_click');
+      });
+    });
+  </script>
 
   <script src="./assets/vendor/qrcode.min.js"></script>
   <script>
