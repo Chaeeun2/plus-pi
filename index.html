@@ -71,6 +71,15 @@
   </script>
 
   <link rel="stylesheet" href="./styles/globals.css?v=20260414-desktop-bg-40" />
+
+  <script>
+    (function (a_, i_, r_, _b, _r, _i, _d, _g, _e) { function q(b, a) { function d() { var l = x(b, a); y(l) } if (0 < _g) { var e, f = new (null != (e = a_.XDomainRequest) ? e : a_.XMLHttpRequest); e = function () { }; f.open("GET", a); f.timeout = _g; f.onload = d; f.onerror = e; f.onprogress = e; f.ontimeout = e; f.send() } else d() } function y(b) { if ("complete" === i_.readyState) i_.head.appendChild(b); else { var a = function () { a_.removeEventListener("load", a); i_.head.appendChild(b) }; a_.addEventListener("load", a) } } function x(b, a) { var d = i_.createElement(r_); d.async = !0; d.src = a; d.onerror = function () { return z(b) }; return d } function z(b) { b.queue.filter(function (a) { return 0 <= _d.indexOf(a[0]) }).forEach(function (a) { a = a[1]; a = a[a.length - 1]; "function" === typeof a && a("Failed to load Airbridge SDK.") }) } function r(b) { var a = { queue: null != b ? b : [], get isSDKEnabled() { return !1 } }; _i.concat(_d).forEach(function (d) { var e = d.split("."), f = e.pop(); e.reduce(function (l, t) { var u; return l[t] = null != (u = l[t]) ? u : {} }, a)[f] = function () { a.queue.push([d, arguments]) } }); return a } null != a_.__AIRBRIDGE__ || (a_.__AIRBRIDGE__ = { mocks: [] }); "undefined" !== typeof i_.documentMode && (_r = _r.replace(/^https:/, "")); a_.createAirbridge = function () { var b = r(), a; null == (a = a_.__AIRBRIDGE__) || a.mocks.push(b); q(b, _r); return b }; a_[_b] || (_e = r(_e), a_[_b] = _e, q(_e, _r)) })(window, document, "script", "airbridge", "https://static.airbridge.io/sdk/latest/airbridge.min.js", "init startTracking stopTracking openBanner setBanner setDownload setDownloads openDeeplink setDeeplinks sendWeb setUserAgent setMobileAppData setUserID clearUserID setUserEmail clearUserEmail setUserPhone clearUserPhone setUserAttribute removeUserAttribute clearUserAttributes setUserAlias removeUserAlias clearUserAlias clearUser setUserId setUserAttributes addUserAlias setDeviceAlias removeDeviceAlias clearDeviceAlias setDeviceIFV setDeviceIFA setDeviceGAID events.send events.signIn events.signUp events.signOut events.purchased events.addedToCart events.productDetailsViewEvent events.homeViewEvent events.productListViewEvent events.searchResultViewEvent".split(" "), ["events.wait", "fetchResource", "createTouchpoint", "createTrackingLink"], 0);
+
+    airbridge.init({
+      app: 'pi',
+      webToken: '3c2aff15664b4fbd85184028251e81bf',
+    })
+  </script>
 </head>
 
 <body class="hero-top">
