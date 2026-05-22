@@ -165,6 +165,26 @@ img {
   line-height: 1;
 }
 
+.end-button__label {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -0.16px;
+  line-height: 1;
+  white-space: nowrap;
+  width: 100%;
+  text-align: center;
+  color: #999;
+  padding: 20px;
+  border-radius: 8px;
+  border: 0;
+  background: var(--color-gray-10);
+  text-decoration: none;
+  line-height: 1;
+  white-space: nowrap;
+  width: 100%;
+  text-align: center;
+}
+
 .store-button__icon-frame {
   display: inline-flex;
   align-items: center;
